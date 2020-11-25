@@ -13,6 +13,8 @@ services:
       - .:/code
     ports:
       - "8000:8000"
+    environment:
+      TITLE: 'Django'
     env_file:
       - ".env"
     #depends_on:
