@@ -28,11 +28,14 @@ DEBUG = True
 
 # ALLOWED_HOSTS = ['django-hello.c201.ca']
 ALLOWED_HOSTS = ['*']
+X_FRAME_OPTIONS = 'ALLOW-FROM https://example.com/'
+
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'homepage.apps.HomepageConfig',
     'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
