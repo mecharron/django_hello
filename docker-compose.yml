@@ -14,7 +14,7 @@ services:
     ports:
       - "8000:8000"
     environment:
-      TITLE: 'Django'
+      TITLE: 'Kozo'
     env_file:
       - ".env"
     #depends_on:
